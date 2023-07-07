@@ -18,6 +18,7 @@ public class BaseTest5 {
         options.addArguments("--remote-allow-origins=*");
 
         driver = new ChromeDriver(options);
+        //driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
         driver.get("https://the-internet.herokuapp.com/");
 

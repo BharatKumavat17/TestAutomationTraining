@@ -47,6 +47,16 @@ public class HomePage {
         clickLink("Forgot Password");
         return new ForgotPasswordPage(driver);
     }
+    public FramePage clickFrame()
+    {
+        clickLink("WYSIWYG Editor");
+        return new FramePage(driver);
+    }
+    public DynamicLoadPage clickDynamicLoading()
+    {
+        clickLink("Dynamic Loading");
+        return new DynamicLoadPage(driver);
+    }
     public void clickLink(String Link)
     {
         driver.findElement(By.linkText(Link)).click();
